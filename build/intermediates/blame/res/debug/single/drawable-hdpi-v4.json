@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\indicator_code_lock_point_area_default_holo.png",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\drawable-hdpi\\indicator_code_lock_point_area_default_holo.png"
+    },
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\indicator_code_lock_point_area_blue_holo.png",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\drawable-hdpi\\indicator_code_lock_point_area_blue_holo.png"
+    },
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\indicator_code_lock_point_area_red_holo.png",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\drawable-hdpi\\indicator_code_lock_point_area_red_holo.png"
+    },
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_code_lock_default_holo.png",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\drawable-hdpi\\btn_code_lock_default_holo.png"
+    },
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\indicator_code_lock_point_area_green_holo.png",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\drawable-hdpi\\indicator_code_lock_point_area_green_holo.png"
+    },
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\btn_code_lock_touched_holo.png",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\drawable-hdpi\\btn_code_lock_touched_holo.png"
+    },
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\indicator_code_lock_drag_direction_red_up.png",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\drawable-hdpi\\indicator_code_lock_drag_direction_red_up.png"
+    }
+]

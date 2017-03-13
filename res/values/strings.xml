@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GesturePOC</string>
+    <string name="action_settings">Settings</string>
+    <string name="setting">请设置手势密码</string>
+    <string name="cancel">取消</string>
+    <string name="try_again">重试</string>
+    <string name="goon">继续</string>
+    <string name="confirm">确认</string>
+    <string name="lockpattern_recording_incorrect_too_short">"至少连接4个点，请重试"</string>
+    <string name="lockpattern_error">"手势密码不对"</string>
+    <string name="lockpattern_success">"手势密码正确"</string>
+    <string name="lockpattern_setting_success">"已成功设置手势密码"</string>
+    <string name="paint">"绘制图像"</string>
+    <string name="confirm_again">"请再次确认手势密码"</string>
+    <string name="try_paint_again">"上次绘制不一致，请重新绘制"</string>
+    <string name="changes_used_up">"您的手势密码错误次数已达上限"</string>
+    <string name="tip">"提示"</string>
+    
+
+    <!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+
+</resources>

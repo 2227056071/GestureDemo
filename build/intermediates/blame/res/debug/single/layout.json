@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setting.xml",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hasee\\Desktop\\GesturePOC\\build\\intermediates\\res\\merged\\debug\\layout\\activity_verify.xml",
+        "source": "C:\\Users\\hasee\\Desktop\\GesturePOC\\res\\layout\\activity_verify.xml"
+    }
+]
