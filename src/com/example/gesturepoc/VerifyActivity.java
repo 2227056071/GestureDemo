@@ -1,5 +1,6 @@
 package com.example.gesturepoc;
 
+import java.lang.ref.WeakReference;
 import java.util.List;
 
 import com.example.gesturepoc.LockPatternView.Cell;
@@ -10,6 +11,7 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
@@ -22,6 +24,30 @@ public class VerifyActivity extends Activity {
     TextView textView;
     LockPatternView mLockPatternView;
     private List<Cell> lockPattern;
+
+    private static class MyHandler extends Handler {
+    }
+
+    private final MyHandler mHandler = new MyHandler();
+
+    public static class MyRunnable implements Runnable {
+        private final WeakReference<Activity> mActivity;
+
+        public MyRunnable(Activity activity) {
+            mActivity = new WeakReference<>(activity);
+        }
+
+        @Override
+        public void run() {
+            Activity activity = mActivity.get();
+            if (activity != null) {
+                LockPatternView lockPatternView = (LockPatternView) activity.findViewById(R.id.lockview_verify);
+                lockPatternView.clearPattern();
+            }
+        }
+    }
+
+    private MyRunnable mRunnable = new MyRunnable(this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,12 +90,11 @@ public class VerifyActivity extends Activity {
                             // 验证手势密码失败
                             mLockPatternView
                                     .setDisplayMode(LockPatternView.DisplayMode.Wrong);
-                            mLockPatternView.clearPattern();
+
                             SharedPreferences preferences = getSharedPreferences(
                                     "remainingTimes", MODE_PRIVATE);
                             int times = preferences.getInt("times", 0);
                             if (times <= 1) {
-
                                 //  手势密码错误次数已达上限
                                 AlertDialog.Builder builder = new AlertDialog.Builder(VerifyActivity.this);
                                 builder.setTitle(R.string.tip);
@@ -82,7 +107,6 @@ public class VerifyActivity extends Activity {
                                     }
                                 });
                                 builder.create().show();
-
                             } else {
                                 preferences.edit().putInt("times", --times).commit();
                                 textView.setText("密码绘制错误，您还有" + times
@@ -91,6 +115,7 @@ public class VerifyActivity extends Activity {
                                 textView.startAnimation(shakeAnimation);
                                 textView.setTextColor(Color.parseColor("#c70c1e"));
                             }
+                            mHandler.postDelayed(mRunnable, 1000);
                         }
 
                     }
@@ -106,5 +131,4 @@ public class VerifyActivity extends Activity {
                     }
                 });
     }
-
 }
